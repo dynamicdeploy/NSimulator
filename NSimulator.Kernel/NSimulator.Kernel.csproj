@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03933408-CBF8-4E62-BB89-67F9DF0F8682}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NSimulator.Kernel</RootNamespace>
+    <AssemblyName>NSimulator.Kernel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsContainerAnalysis>False</CodeContractsContainerAnalysis>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>False</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile>..\..\baseline.xml</CodeContractsBaseLineFile>
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+    <DocumentationFile>bin\Debug\NSimulator.Kernel.xml</DocumentationFile>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Release\NSimulator.Kernel.xml</DocumentationFile>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsContainerAnalysis>False</CodeContractsContainerAnalysis>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>False</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backbone\BackboneBase.cs" />
+    <Compile Include="Backbone\Infrastructure\BackboneCharacteristicAttribute.cs" />
+    <Compile Include="Backbone\Infrastructure\Contracts\Contract_IBackbone.cs" />
+    <Compile Include="Backbone\Infrastructure\Contracts\Contract_IBackboneView.cs" />
+    <Compile Include="Backbone\Infrastructure\IBackbone.cs" />
+    <Compile Include="Backbone\Infrastructure\IBackboneView.cs" />
+    <Compile Include="Backbone\Infrastructure\IPCAPTypeModifyable.cs" />
+    <Compile Include="Backbone\Infrastructure\EventHandlers\TransmitEventHandler.cs" />
+    <Compile Include="Clock\ClockHandler.cs" />
+    <Compile Include="Clock\Contracts\Contract_IClock.cs" />
+    <Compile Include="Clock\EventHandlers\ClockActionErrorEventHandler.cs" />
+    <Compile Include="Clock\IClockView.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IElement.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuCommand.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuCommandView.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuContext.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuContextView.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuDriver.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuDriverView.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuItemParameter.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\IMenuItemParameterView.cs" />
+    <Compile Include="Config\HierarchicalMenu\Infrastructure\MenuCommandHandler.cs" />
+    <Compile Include="Config\HierarchicalMenu\Simple\MenuCommand.cs" />
+    <Compile Include="Config\HierarchicalMenu\Simple\MenuContext.cs" />
+    <Compile Include="Config\HierarchicalMenu\Simple\MenuDriver.cs" />
+    <Compile Include="Config\HierarchicalMenu\Simple\MenuItemParameter.cs" />
+    <Compile Include="DeviceEngine\Infrastructure\ModuleDispatcher.cs" />
+    <Compile Include="DeviceEngine\Infrastructure\ModuleInformation.cs" />
+    <Compile Include="DeviceEngine\Infrastructure\ModulesNameEqualityComparer.cs" />
+    <Compile Include="Device\DeviceBase.cs" />
+    <Compile Include="Device\Infrastructure\Contracts\Contract_IDeviceView.cs" />
+    <Compile Include="Device\Infrastructure\Contracts\Contract_IDevice.cs" />
+    <Compile Include="Device\Infrastructure\Contracts\Contract_IDeviceEngine.cs" />
+    <Compile Include="Device\Infrastructure\EventHandlers\DeviceProcessPacketEventHandler.cs" />
+    <Compile Include="Device\Infrastructure\EventHandlers\DeviceStateChangedEventHandler.cs" />
+    <Compile Include="Device\Infrastructure\EventHandlers\DeviceStructureChangedEventHandler.cs" />
+    <Compile Include="Device\Infrastructure\IDevice.cs" />
+    <Compile Include="DeviceEngine\IDeviceEngine.cs" />
+    <Compile Include="Device\Infrastructure\IDeviceView.cs" />
+    <Compile Include="Exceptions\Clock\InvalidClockHandlerException.cs" />
+    <Compile Include="Exceptions\Devices\FeatureNotSupportedException.cs" />
+    <Compile Include="Exceptions\Engine\ModuleAlreadyLoadedException.cs" />
+    <Compile Include="Exceptions\Interfaces\EndPointsOverflowException.cs" />
+    <Compile Include="Exceptions\Backbones\InterfaceNotCompatibleWithBackboneException.cs" />
+    <Compile Include="Exceptions\Interfaces\InterfaceNotFoundException.cs" />
+    <Compile Include="Exceptions\Menu\InvalidParameterException.cs" />
+    <Compile Include="Exceptions\Menu\MenuCommandAlreadyHasContextException.cs" />
+    <Compile Include="Exceptions\Menu\MenuElementNameIsAmbiguousException.cs" />
+    <Compile Include="Exceptions\Menu\MenuCommandNameMustBeUniqueException.cs" />
+    <Compile Include="Exceptions\Menu\MenuCommandNotFoundException.cs" />
+    <Compile Include="Exceptions\Menu\MenuContextAlreadyHasParentException.cs" />
+    <Compile Include="Exceptions\Menu\MenuContextNameMustBeUniqueException.cs" />
+    <Compile Include="Exceptions\Menu\MenuContextNotFoundException.cs" />
+    <Compile Include="Exceptions\Menu\NotEnoughParametersException.cs" />
+    <Compile Include="Exceptions\Modules\InvalidInterfaceClassException.cs" />
+    <Compile Include="Exceptions\Modules\InvalidModuleClassException.cs" />
+    <Compile Include="Exceptions\Modules\RedundantDependsException.cs" />
+    <Compile Include="Exceptions\Modules\RedundantInterfaceTypeException.cs" />
+    <Compile Include="Exceptions\Modules\UnknownModuleLevelException.cs" />
+    <Compile Include="Exceptions\Network\EntityHandlerNotFoundException.cs" />
+    <Compile Include="Exceptions\Network\NetworkContainsBackboneException.cs" />
+    <Compile Include="Exceptions\Network\NetworkContainsDeviceException.cs" />
+    <Compile Include="Exceptions\Network\NetworkContainsInterfaceException.cs" />
+    <Compile Include="Exceptions\Network\SchemaValidationException.cs" />
+    <Compile Include="Infrastructure\Array\Array.cs" />
+    <Compile Include="Infrastructure\Array\ArrayEnumerator.cs" />
+    <Compile Include="Infrastructure\Array\ArrayView.cs" />
+    <Compile Include="Infrastructure\Array\ArrayViewBinaryWriter.cs" />
+    <Compile Include="Infrastructure\Array\IArray.cs" />
+    <Compile Include="Infrastructure\Array\IArrayView.cs" />
+    <Compile Include="Infrastructure\Contracts\Contract_INamedElement.cs" />
+    <Compile Include="Infrastructure\Contracts\Contract_IXMLSerializable.cs" />
+    <Compile Include="Infrastructure\INamedElement.cs" />
+    <Compile Include="Infrastructure\NamedElementChangedNameEventHandler.cs" />
+    <Compile Include="Infrastructure\NamedElementEqualityComparer.cs" />
+    <Compile Include="Infrastructure\IXMLSerializable.cs" />
+    <Compile Include="Infrastructure\Singleton.cs" />
+    <Compile Include="Infrastructure\Triple.cs" />
+    <Compile Include="Interface\Infrastructure\Contracts\Contract_IInterfaceView.cs" />
+    <Compile Include="Interface\Infrastructure\Contracts\Contract_IInterface.cs" />
+    <Compile Include="Interface\Infrastructure\EventHandlers\BackboneAttachedEventHandler.cs" />
+    <Compile Include="Interface\Infrastructure\EventHandlers\BackboneDetachedEventHandler.cs" />
+    <Compile Include="Interface\Infrastructure\IInterface.cs" />
+    <Compile Include="Interface\Infrastructure\IInterfaceView.cs" />
+    <Compile Include="Interface\Infrastructure\InterfacePrefixAttribute.cs" />
+    <Compile Include="Exceptions\Backbones\InterfaceAlreadyAttachedToBackboneException.cs" />
+    <Compile Include="Exceptions\Devices\InterfaceAlreadyAttachedToDeviceException.cs" />
+    <Compile Include="Interface\Infrastructure\EventHandlers\InterfaceReceivePacketEventHandler.cs" />
+    <Compile Include="Interface\Infrastructure\EventHandlers\InterfaceSendPacketEventHandler.cs" />
+    <Compile Include="Interface\Infrastructure\EventHandlers\InterfaceStateChangedEventHandler.cs" />
+    <Compile Include="Interface\InterfaceBase.cs" />
+    <Compile Include="Exceptions\Interfaces\InterfaceNameMustBeUniqueException.cs" />
+    <Compile Include="Exceptions\Backbones\InterfaceNotAttachedToBackboneException.cs" />
+    <Compile Include="Exceptions\Devices\InterfaceNotAttachedToDeviceException.cs" />
+    <Compile Include="Exceptions\NSimulatorException.cs" />
+    <Compile Include="Module\Infrastructure\DependsOn_FromAttribute.cs" />
+    <Compile Include="Module\Infrastructure\DependsOn_ToAttribute.cs" />
+    <Compile Include="Module\Infrastructure\InterfaceTypeAttribute.cs" />
+    <Compile Include="Module\Infrastructure\LevelAttribute.cs" />
+    <Compile Include="Network\Infrastructure\Contracts\Contract_INetworkView.cs" />
+    <Compile Include="Network\Infrastructure\Contracts\Contract_INetwork.cs" />
+    <Compile Include="Network\INetwork.cs" />
+    <Compile Include="Network\INetworkView.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_AddEngineFailed.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_SetBackboneFailed.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_TwoEngines.cs" />
+    <Compile Include="Network\Infrastructure\ILoadTopologyError.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_AssemblyLoadFailed.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_ClassLoadFailed.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_EntityLoadFailed.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongClassId.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongClassType.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_AddInterfaceFailed.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongBackboneId.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongDeviceId.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongEngineId.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongId.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongInterfaceId.cs" />
+    <Compile Include="Network\Infrastructure\Errors\LoadError_WrongModuleId.cs" />
+    <Compile Include="Network\Infrastructure\LoadTopologyErrorEventHandler.cs" />
+    <Compile Include="Network\Network.cs" />
+    <Compile Include="Logger\Contracts\Contract_IPacketDumper.cs" />
+    <Compile Include="Logger\PCAP\Infrastructure\PCAPFileHeader.cs" />
+    <Compile Include="Logger\PCAP\Infrastructure\PCAPFileWriter.cs" />
+    <Compile Include="Logger\PCAP\Infrastructure\PCAPNetworkTypes.cs" />
+    <Compile Include="Logger\PCAP\Infrastructure\PCAPRecord.cs" />
+    <Compile Include="Logger\PCAP\Infrastructure\PCAPRecordHeader.cs" />
+    <Compile Include="Logger\PCAP\PCAPPacketDumper.cs" />
+    <Compile Include="Module\IModule.cs" />
+    <Compile Include="IPacket.cs" />
+    <Compile Include="Clock\BaseClock.cs" />
+    <Compile Include="Clock\ClockAction.cs" />
+    <Compile Include="Clock\IClock.cs" />
+    <Compile Include="Clock\RealtimeClock.cs" />
+    <Compile Include="Logger\Infrastructure\IPacketDumper.cs" />
+    <Compile Include="Infrastructure\Pair.cs" />
+    <Compile Include="Logger\Simple\SimpleBinaryPacketDumper.cs" />
+    <Compile Include="Network\Network_BackboneEntity.cs" />
+    <Compile Include="Network\Network_ClassHelpers.cs" />
+    <Compile Include="Network\Network_DeviceEntity.cs" />
+    <Compile Include="Network\NetworkEntity.cs" />
+    <Compile Include="Network\Network_EntityHelpers.cs" />
+    <Compile Include="Network\Network_InterfaceEntity.cs" />
+    <Compile Include="Network\Network_MakeTopology.cs" />
+    <Compile Include="Network\Network_SaveTopology.cs" />
+    <Compile Include="Infrastructure\UniqueIdGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Network\Infrastructure\TopologySchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

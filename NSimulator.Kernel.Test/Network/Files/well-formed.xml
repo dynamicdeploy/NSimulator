@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<network>
+  <devices>
+    <classes>
+      <class name="DeviceMock" assembly="NSimulator.TestMocks.dll" id="0" />
+      <class name="DeviceBaseMock" assembly="NSimulator.TestMocks.dll" id="1" />
+    </classes>
+
+    <list>
+      <device classid="1" id="0">
+        <!-- device specific information -->
+      </device>
+      <device classid="1" id="1">
+        <!-- device specific information -->
+      </device>
+      <device classid="0" id="2">
+        <!-- devicebase specific information -->
+      </device>
+      <device classid="0" id="3">
+        <!-- devicebase specific information -->
+      </device>
+    </list>
+  </devices>
+
+  <interfaces>
+    <classes>
+      <class name="InterfaceMock" assembly="NSimulator.TestMocks.dll" id="0" />
+      <class name="InterfaceBaseMock" assembly="NSimulator.TestMocks.dll" id="1" />
+    </classes>
+
+    <list>
+      <interface classid="1" id="0">
+        <!-- interface specific information -->
+      </interface>
+      <interface classid="1" id="1">
+        <!-- interface specific information -->
+      </interface>
+      <interface classid="1" id="2">
+        <!-- interface specific information -->
+      </interface>
+      <interface classid="1" id="3">
+        <!-- interface specific information -->
+      </interface>
+      <interface classid="0" id="4">
+        <!-- interfacebase specific information -->
+      </interface>
+      <interface classid="0" id="5">
+        <!-- interfacebase specific information -->
+      </interface>
+      <interface classid="0" id="6">
+        <!-- interfacebase specific information -->
+      </interface>
+      <interface classid="0" id="7">
+        <!-- interfacebase specific information -->
+      </interface>
+    </list>
+  </interfaces>
+
+  <backbones>
+    <classes>
+      <class name="UnicastBackboneMock" assembly="NSimulator.TestMocks.dll" id="0" />
+      <class name="BackboneBaseMock" assembly="NSimulator.TestMocks.dll" id="1" />
+    </classes>
+
+    <list>
+      <backbone classid="1" id="0">
+        <!-- backbonebase specific information -->
+      </backbone>
+      <backbone classid="1" id="1">
+        <!-- backbonebase specific information -->
+      </backbone>
+      <backbone classid="0" id="2">
+        <!-- backbone specific information -->
+      </backbone>
+      <backbone classid="0" id="3">
+        <!-- backbone specific information -->
+      </backbone>
+    </list>
+  </backbones>
+
+  <modules>
+    <classes>
+      <class name="ModuleMock1" assembly="NSimulator.TestMocks.dll" id="0" />
+      <class name="ModuleMock2" assembly="NSimulator.TestMocks.dll" id="1" />
+    </classes>
+
+    <list>
+      <module classid="1" id="0">
+        <!-- module2 specific information -->
+      </module>
+      <module classid="1" id="1">
+        <!-- module2 specific information -->
+      </module>
+      <module classid="0" id="2">
+        <!-- module1 specific information -->
+      </module>
+      <module classid="0" id="3">
+        <!-- module1 specific information -->
+      </module>
+    </list>
+  </modules>
+
+  <engines>
+    <classes>
+      <class name="EngineMock1" assembly="NSimulator.TestMocks.dll" id="0" />
+      <class name="EngineMock2" assembly="NSimulator.TestMocks.dll" id="1" />
+    </classes>
+
+    <list>
+      <engine classid="1" id="0">
+        <!-- engine2 specific information -->
+      </engine>
+      <engine classid="1" id="1">
+        <!-- engine2 specific information -->
+      </engine>
+      <engine classid="0" id="2">
+        <!-- engine1 specific information -->
+      </engine>
+      <engine classid="0" id="3">
+        <!-- engine1 specific information -->
+      </engine>
+    </list>
+  </engines>
+
+  <topology>
+    <device id="0">
+      <interface id="0" />
+      <interface id="1" />
+      <interface id="4" />
+      <engine id="0" />
+      <module id="0" />
+      <module id="1" />
+    </device>
+    <device id="1">
+      <interface id="2" />
+      <interface id="3" />
+      <interface id="5" />
+      <engine id="1" />
+      <module id="2" />
+    </device>
+    <device id="2">
+      <interface id="6" />
+      <engine id="2" />
+      <module id="3" />
+    </device>
+    <device id="3">
+      <interface id="7" />
+      <engine id="3" />
+    </device>
+    <backbone id="0">
+      <interface id="0" />
+      <interface id="2" />
+    </backbone>
+    <backbone id="1">
+      <interface id="1" />
+      <interface id="3" />
+    </backbone>
+    <backbone id="2">
+      <interface id="4" />
+      <interface id="6" />
+    </backbone>
+    <backbone id="3">
+      <interface id="5" />
+      <interface id="7" />
+    </backbone>
+  </topology>
+</network>

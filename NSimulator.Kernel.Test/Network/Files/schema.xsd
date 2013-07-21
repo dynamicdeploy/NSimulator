@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<x:schema id="TopologySchema" xmlns:x="http://www.w3.org/2001/XMLSchema">
+  <x:complexType name="class_list">
+    <x:sequence>
+      <x:element name="class" minOccurs="0" maxOccurs="unbounded">
+        <x:complexType>
+          <x:attribute name="name" type="x:string" use="required" />
+          <x:attribute name="assembly" type="x:string" use="required" />
+          <x:attribute name="id" type="x:unsignedLong" use="required" />
+        </x:complexType>
+      </x:element>
+    </x:sequence>
+  </x:complexType>
+  <x:complexType name="has_id">
+    <x:attribute name="id" type="x:unsignedLong" use="required" />
+  </x:complexType>
+  <x:attributeGroup name="entity_attrs">
+    <x:attribute name="classid" type="x:unsignedLong" use="required" />
+    <x:attribute name="id" type="x:unsignedLong" use="required" />
+  </x:attributeGroup>
+  <x:element name="network">
+    <x:complexType>
+      <x:sequence>
+        <x:element name="devices" minOccurs="1" maxOccurs="1">
+          <x:complexType>
+            <x:sequence>
+              <x:element name="classes" type="class_list" minOccurs="1" maxOccurs="1">
+                <x:unique name="device_class_id_must_be_unique">
+                  <x:selector xpath="class" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+              <x:element name="list" minOccurs="1" maxOccurs="1">
+                <x:complexType>
+                  <x:sequence>
+                    <x:element name="device" minOccurs="0" maxOccurs="unbounded">
+                      <x:complexType>
+                        <x:sequence>
+                          <x:any processContents="skip" minOccurs="0" maxOccurs="unbounded"  />
+                        </x:sequence>
+                        <x:attributeGroup ref="entity_attrs" />
+                      </x:complexType>
+                    </x:element>
+                  </x:sequence>
+                </x:complexType>
+                <x:unique name="device_id_must_be_unique">
+                  <x:selector xpath="device" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+            </x:sequence>
+          </x:complexType>
+        </x:element>
+        <x:element name="interfaces" minOccurs="1" maxOccurs="1">
+          <x:complexType>
+            <x:sequence>
+              <x:element name="classes" type="class_list" minOccurs="1" maxOccurs="1">
+                <x:unique name="interface_class_id_must_be_unique">
+                  <x:selector xpath="class" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+              <x:element name="list" minOccurs="1" maxOccurs="1">
+                <x:complexType>
+                  <x:sequence>
+                    <x:element name="interface" minOccurs="0" maxOccurs="unbounded">
+                      <x:complexType>
+                        <x:sequence>
+                          <x:any processContents="skip" minOccurs="0" maxOccurs="unbounded" />
+                        </x:sequence>
+                        <x:attributeGroup ref="entity_attrs" />
+                      </x:complexType>
+                    </x:element>
+                  </x:sequence>
+                </x:complexType>
+                <x:unique name="interface_id_must_be_unique">
+                  <x:selector xpath="interface" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+            </x:sequence>
+          </x:complexType>
+        </x:element>
+        <x:element name="backbones" minOccurs="1" maxOccurs="1">
+          <x:complexType>
+            <x:sequence>
+              <x:element name="classes" type="class_list" minOccurs="1" maxOccurs="1">
+                <x:unique name="backbone_class_id_must_be_unique">
+                  <x:selector xpath="class" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+              <x:element name="list" minOccurs="1" maxOccurs="1">
+                <x:complexType>
+                  <x:sequence>
+                    <x:element name="backbone" minOccurs="0" maxOccurs="unbounded">
+                      <x:complexType>
+                        <x:sequence>
+                          <x:any processContents="skip" minOccurs="0" maxOccurs="unbounded" />
+                        </x:sequence>
+                        <x:attributeGroup ref="entity_attrs" />
+                      </x:complexType>
+                    </x:element>
+                  </x:sequence>
+                </x:complexType>
+                <x:unique name="backbone_id_must_be_unique">
+                  <x:selector xpath="backbone" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+            </x:sequence>
+          </x:complexType>
+        </x:element>
+        <x:element name="modules" minOccurs="1" maxOccurs="1">
+          <x:complexType>
+            <x:sequence>
+              <x:element name="classes" type="class_list" minOccurs="1" maxOccurs="1">
+                <x:unique name="module_class_id_must_be_unique">
+                  <x:selector xpath="class" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+              <x:element name="list" minOccurs="1" maxOccurs="1">
+                <x:complexType>
+                  <x:sequence>
+                    <x:element name="module" minOccurs="0" maxOccurs="unbounded">
+                      <x:complexType>
+                        <x:sequence>
+                          <x:any processContents="skip" minOccurs="0" maxOccurs="unbounded" />
+                        </x:sequence>
+                        <x:attributeGroup ref="entity_attrs" />
+                      </x:complexType>
+                    </x:element>
+                  </x:sequence>
+                </x:complexType>
+                <x:unique name="module_id_must_be_unique">
+                  <x:selector xpath="module" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+            </x:sequence>
+          </x:complexType>
+        </x:element>
+        <x:element name="engines" minOccurs="1" maxOccurs="1">
+          <x:complexType>
+            <x:sequence>
+              <x:element name="classes" type="class_list" minOccurs="1" maxOccurs="1">
+                <x:unique name="engine_class_id_must_be_unique">
+                  <x:selector xpath="class" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+              <x:element name="list" minOccurs="1" maxOccurs="1">
+                <x:complexType>
+                  <x:sequence>
+                    <x:element name="engine" minOccurs="0" maxOccurs="unbounded">
+                      <x:complexType>
+                        <x:sequence>
+                          <x:any processContents="skip" minOccurs="0" maxOccurs="unbounded" />
+                        </x:sequence>
+                        <x:attributeGroup ref="entity_attrs" />
+                      </x:complexType>
+                    </x:element>
+                  </x:sequence>
+                </x:complexType>
+                <x:unique name="engine_id_must_be_unique">
+                  <x:selector xpath="engine" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+            </x:sequence>
+          </x:complexType>
+        </x:element>
+        <x:element name="topology" minOccurs="1" maxOccurs="1">
+          <x:complexType>
+            <x:sequence>
+              <x:element name="device" minOccurs="0" maxOccurs="unbounded">
+                <x:complexType>
+                  <x:sequence>
+                    <x:element name="interface" minOccurs="0" maxOccurs="unbounded" type="has_id" />
+                    <x:element name="engine" minOccurs="0" maxOccurs="1" type="has_id" />
+                    <x:element name="module" minOccurs="0" maxOccurs="unbounded" type="has_id" />
+                  </x:sequence>
+                  <x:attribute name="id" type="x:unsignedLong" use="required" />
+                </x:complexType>
+                <x:unique name="topology_interface_id_in_device_must_be_unique">
+                  <x:selector xpath="interface" />
+                  <x:field xpath="@id" />
+                </x:unique>
+                <x:unique name="topology_module_id_in_device_must_be_unique">
+                  <x:selector xpath="module" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+              <x:element name="backbone" minOccurs="0" maxOccurs="unbounded">
+                <x:complexType>
+                  <x:sequence>
+                    <x:element name="interface" minOccurs="0" maxOccurs="unbounded" type="has_id" />
+                  </x:sequence>
+                  <x:attribute name="id" type="x:unsignedLong" use="required" />
+                </x:complexType>
+                <x:unique name="topology_interface_id_in_backbone_must_be_unique">
+                  <x:selector xpath="interface" />
+                  <x:field xpath="@id" />
+                </x:unique>
+              </x:element>
+            </x:sequence>
+          </x:complexType>
+          <x:unique name="topology_device_id_must_be_unique">
+            <x:selector xpath="device" />
+            <x:field xpath="@id" />
+          </x:unique>
+          <x:unique name="topology_backbone_id_must_be_unique">
+            <x:selector xpath="backbone" />
+            <x:field xpath="@id" />
+          </x:unique>
+        </x:element>
+      </x:sequence>
+    </x:complexType>
+  </x:element>
+</x:schema>

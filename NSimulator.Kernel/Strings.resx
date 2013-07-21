@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ClockDestroyedException" xml:space="preserve">
+    <value>Часы уничтожены.</value>
+  </data>
+  <data name="EndPointsOverflowException" xml:space="preserve">
+    <value>Среда передачи данных "{0}" не может содержать больше, чем {1} конечных точек.</value>
+  </data>
+  <data name="EntityHandlerNotFoundException" xml:space="preserve">
+    <value>Сущность "{0}" не найдена в топологии.</value>
+  </data>
+  <data name="FeatureNotSupportedException" xml:space="preserve">
+    <value>Устройство "{0}" не поддерживает возможность "{1}".</value>
+  </data>
+  <data name="InterfaceAlreadyAttachedToBackboneException" xml:space="preserve">
+    <value>Интерфейс "{0}" уже привязан к другой среде передачи данных.</value>
+  </data>
+  <data name="InterfaceAlreadyAttachedToDeviceException" xml:space="preserve">
+    <value>Интерфейс "{0}" уже привязан к другому устройству.</value>
+  </data>
+  <data name="InterfaceNameMustBeUniqueException" xml:space="preserve">
+    <value>Интерфейс с именем "{0}" уже существует в устройстве "{1}".</value>
+  </data>
+  <data name="InterfaceNotAttachedToBackboneException1" xml:space="preserve">
+    <value>Интерфейс с именем "{0}" не содержится ни в одной среде передачи данных.</value>
+  </data>
+  <data name="InterfaceNotAttachedToBackboneException2" xml:space="preserve">
+    <value>Интерфейс с именем "{0}" не содержится в среде передачи "{1}".</value>
+  </data>
+  <data name="InterfaceNotAttachedToDeviceException1" xml:space="preserve">
+    <value>Интерфейс с именем "{0}" не содержится ни в одном устройстве.</value>
+  </data>
+  <data name="InterfaceNotAttachedToDeviceException2" xml:space="preserve">
+    <value>Интерфейс с именем "{0}" не содержится в устройстве "{1}".</value>
+  </data>
+  <data name="InterfaceNotCompatibleWithBackboneException" xml:space="preserve">
+    <value>Интерфейс "{0}" несовместим со средой передачи "{1}".</value>
+  </data>
+  <data name="InterfaceNotFoundException" xml:space="preserve">
+    <value>Интерфейса с именем "{0}" не существует в устройстве "{1}".</value>
+  </data>
+  <data name="InvalidClockHandlerException" xml:space="preserve">
+    <value>Неверный идентификатор действия в часах: "{0}".</value>
+  </data>
+  <data name="InvalidInterfaceClassException" xml:space="preserve">
+    <value>Класс с именем "{0}" не реализует интерфейс IInterfaceView.</value>
+  </data>
+  <data name="InvalidModuleClassException" xml:space="preserve">
+    <value>Класс с именем "{0}" не реализует интерфейс IModule.</value>
+  </data>
+  <data name="InvalidParameterException" xml:space="preserve">
+    <value>Параметр с именем "{0}" имеет неверное значение "{1}".
+{2}</value>
+  </data>
+  <data name="LoadError_AddEngineFailed" xml:space="preserve">
+    <value>Ошибка добавления прошивки с идентификатором "{0}" в устройство с идентификатором "{1}".
+{2}</value>
+  </data>
+  <data name="LoadError_AddInterfaceFailed" xml:space="preserve">
+    <value>Ошибка добавления интерфейса с идентификатором "{0}" в устройство с идентификатором "{1}".
+{2}</value>
+  </data>
+  <data name="LoadError_AssemblyLoadFailed" xml:space="preserve">
+    <value>Ошибка загрузки сборки "{0}".
+{1}</value>
+  </data>
+  <data name="LoadError_ClassLoadFailed" xml:space="preserve">
+    <value>Ошибка загрузки класса {0} из сборки "{1}".
+{2}</value>
+  </data>
+  <data name="LoadError_EntityLoadFailed" xml:space="preserve">
+    <value>Ошибка загрузки сущности с идентификатором "{0}".
+{1}</value>
+  </data>
+  <data name="LoadError_SetBackboneFailed" xml:space="preserve">
+    <value>Ошибка выполнения привязки интерфейса с идентификатором "{0}" к среде передачи с идентификатором "{1}".
+{2}</value>
+  </data>
+  <data name="LoadError_TwoEngines" xml:space="preserve">
+    <value>Устройство с идентификатором "{0}" имеет две прошивки. Будет использоваться первая.</value>
+  </data>
+  <data name="LoadError_WrongBackboneId" xml:space="preserve">
+    <value>Неверный идентификатор среды передачи данных: "{0}". Среда передачи будет проигнорирована.</value>
+  </data>
+  <data name="LoadError_WrongClassId" xml:space="preserve">
+    <value>Неверный идентификатор класса сущности "{0}" : "{1}".</value>
+  </data>
+  <data name="LoadError_WrongClassType" xml:space="preserve">
+    <value>Неверный тип сущности "{0}". Ожидался объект типа "{1}", но объект имеет тип "{2}".</value>
+  </data>
+  <data name="LoadError_WrongDeviceId" xml:space="preserve">
+    <value>Неверный идентификатор устройства: "{0}". Устройство будет проигнорировано.</value>
+  </data>
+  <data name="LoadError_WrongEngineId" xml:space="preserve">
+    <value>Неверный идентификатор прошивки: "{0}". Прошивка будет проигнорирована.</value>
+  </data>
+  <data name="LoadError_WrongInterfaceId" xml:space="preserve">
+    <value>Неверный идентификатор интерфейса: "{0}". Интерфейс будет проигнорирован.</value>
+  </data>
+  <data name="LoadError_WrongModuleId" xml:space="preserve">
+    <value>Неверный идентификатор модуля: "{0}". Модуль будет проигнорирован.</value>
+  </data>
+  <data name="MenuCommandAlreadyHasContextException" xml:space="preserve">
+    <value>Команда с названием "{0}" не может быть добавлена одновременно в несколько контекстов.</value>
+  </data>
+  <data name="MenuCommandNameMustBeUniqueException" xml:space="preserve">
+    <value>Название команды "{0}" не является уникальным в пределах контекста "{1}".</value>
+  </data>
+  <data name="MenuCommandNotFoundException" xml:space="preserve">
+    <value>Команда с названием "{0}" отсутствует в контексте "{1}".</value>
+  </data>
+  <data name="MenuContextAlreadyHasParentException" xml:space="preserve">
+    <value>Контекст с названием "{0}" не может быть добавлен одновременно в несколько контекстов.</value>
+  </data>
+  <data name="MenuContextNameMustBeUniqueException" xml:space="preserve">
+    <value>Название контекста "{0}" не является уникальным в пределах контекста "{1}".</value>
+  </data>
+  <data name="MenuContextNotFoundException" xml:space="preserve">
+    <value>Контекст с названием "{0}" отсутствует в контексте "{1}".</value>
+  </data>
+  <data name="MenuElementNameIsAmbigiousException" xml:space="preserve">
+    <value>Название элемента меню "{0}" неоднозначно дополняется в пределах контекста "{1}".</value>
+  </data>
+  <data name="ModuleAlreadyLoadedException" xml:space="preserve">
+    <value>Модуль класса "{0}" уже загружен в прошивку.</value>
+  </data>
+  <data name="NetworkContainsBackboneException" xml:space="preserve">
+    <value>Среда передачи данных "{0}" уже имеется в топологии сети.</value>
+  </data>
+  <data name="NetworkContainsDeviceException" xml:space="preserve">
+    <value>Устройство "{0}" уже имеется в топологии сети.</value>
+  </data>
+  <data name="NetworkContainsInterfaceException" xml:space="preserve">
+    <value>Интерфейс "{0}" уже имеется в топологии сети.</value>
+  </data>
+  <data name="NotEnoughParametersException" xml:space="preserve">
+    <value>Контекст "{0}" ожидает {1} параметров, но передано {2}.</value>
+  </data>
+  <data name="RedundantDependsException" xml:space="preserve">
+    <value>Модуль класса "{0}" является модулем уровня 0 и имеет зависимость от модуля в направлении "от интерфейса".</value>
+  </data>
+  <data name="RedundantInterfaceTypeException" xml:space="preserve">
+    <value>Модуль класса "{0}" не является модулем уровня 0, однако содержит информацию о типах интерфейсов.</value>
+  </data>
+  <data name="SchemaValidationException" xml:space="preserve">
+    <value>Ошибка валидации xml-файла:
+{0}</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TopologySchema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Network\Infrastructure\TopologySchema.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnknownModuleLevelException" xml:space="preserve">
+    <value>Класс модуля "{0}" не содержит информацию об уровне работы.</value>
+  </data>
+</root>
